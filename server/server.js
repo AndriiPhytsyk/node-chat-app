@@ -9,9 +9,9 @@ const app = express();
 
 app.use(express.static(publicPath));
 
-app.get('/', (req, res)=>{
-    res.send("hiiii")
-})
+app.get('/', function (req, res) {
+res.send(JSON.stringify({ Hello: 'World'}));
+});
 
 app.listen(port, ()=>console.log(`server is running on port ${port}`));
 
