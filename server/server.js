@@ -9,7 +9,7 @@ const app = express();
 
 app.use(express.static(publicPath));
 
-app.get('./', (req, res)=>{
+app.get('/', (req, res)=>{
     res.send("hiiii")
 })
 
